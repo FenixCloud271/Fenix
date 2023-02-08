@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.example.fenixblock.dao.transactionMapper">
+
+    <select id="getTxHash" parameterType="java.util.List" resultType="com.example.fenixblock.vo.transaction">
+        select *
+        from table_block_transaction_testnet
+        where from_address in
+        <foreach item="item" index="index" collection="fromAddress" open="(" separator="," close=")">#{item}
+        </foreach>
+
+    </select>
+</mapper>

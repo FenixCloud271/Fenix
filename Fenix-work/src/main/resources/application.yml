@@ -1,0 +1,39 @@
+spring:
+  datasource:
+    username: root
+    password: root
+    url: jdbc:mysql://192.168.0.106:3306/schema_block?useUnicode=true&characterEncoding=utf-8&allowMultiQueries=true&useSSL=false&serverTimezone=GMT%2b8
+    driver-class-name: com.mysql.cj.jdbc.Driver
+  cloud:
+    nacos:
+      discovery:
+        server-addr: 127.0.0.1:8848
+  application:
+    name: Fenix-work
+server:
+  port: 8084
+
+#dubbo:
+#  #指定当前服务
+#  application:
+#    name: workService
+#    qos-enable: false
+#  #注册中心
+#  registry:
+#    protocol: nacos
+#    address: 127.0.0.1:8848
+#  #通信规则（通信协议和接口）
+#  protocol:
+#    name: dubbo
+#    port: 9910 #暴露服务端口（默认20880,不同的服务提供者端口不能重复）
+#    threadpool: cached
+#    # host: 127.0.0.1
+#    telnet: help
+#  #暴露服务
+#  provider:
+#    loadbalance: leastactive
+#    timeout: 6000
+#  #监控中心
+#  monitor:
+#    protocol: registry
+
