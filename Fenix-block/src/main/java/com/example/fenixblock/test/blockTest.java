@@ -5,7 +5,7 @@ import com.example.fenixblock.FenixBlockApplication;
 import com.example.fenixblock.service.BlockService;
 import com.example.fenixblock.service.BlockTestService;
 import com.example.fenixblock.vo.TestVO;
-import com.example.fenixblock.vo.transaction;
+import com.example.fenixblock.vo.TransactionVO;
 import lombok.extern.slf4j.Slf4j;
 import org.junit.Test;
 import org.junit.runner.RunWith;
@@ -39,7 +39,7 @@ public class blockTest {
         String fromAddress = "0x2cb43dc86d50ce889b08bb2c00b4f659c150ffa4";
         List<String> addressList = new ArrayList<>();
         addressList.add(fromAddress);
-        List<transaction> txList = blockTest.getTxByFrom(addressList);
+        List<TransactionVO> txList = blockTest.getTxByFrom(addressList);
         System.out.println("txList:");
         String json = JSON.toJSONString(txList);
         System.out.println(json);
