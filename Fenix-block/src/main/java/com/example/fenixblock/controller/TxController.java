@@ -13,7 +13,7 @@ import java.util.List;
 
 @RequestMapping("/tx")
 @RestController
-public class txController {
+public class TxController {
     @Autowired
     BlockService blockService;
 

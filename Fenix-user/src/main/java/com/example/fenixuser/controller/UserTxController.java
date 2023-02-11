@@ -13,13 +13,13 @@ import java.util.List;
 
 @RequestMapping("/userTx")
 @RestController
-public class userTxController {
+public class UserTxController {
     @Autowired
     UserTxService userTxService;
 
     @GetMapping("/getAddressById")
-    public List<String>  getAddressById(@RequestParam Integer userId) {
+    public Result getAddressById(@RequestParam Integer userId) {
         List<String> addressList = userTxService.getUserAddressList(userId);
-        return addressList;
+        return Result.ok().setData(addressList);
     }
 }
