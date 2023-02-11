@@ -6,7 +6,7 @@ import lombok.Data;
 
 @Data
 @TableName(value = "table_block_transaction_testnet")
-public class transaction {
+public class TransactionVO {
 
     @TableField(value = "id")
     private int id;

@@ -11,8 +11,11 @@ spring:
         server-addr: 127.0.0.1:8848
   application:
     name: Fenix-block
+  redis:
+    host: 192.168.0.113
+    port: 6379
   rabbitmq:
-    host: 192.168.0.107
+    host: 192.168.0.113
     port: 5672
     virtual-host: /
 server:
