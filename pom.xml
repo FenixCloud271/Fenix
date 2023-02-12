@@ -12,6 +12,7 @@
     <modules>
         <module>Fenix-common</module>
         <module>Fenix-user</module>
+        <module>Fenix-gateway</module>
     </modules>
 
 </project>
