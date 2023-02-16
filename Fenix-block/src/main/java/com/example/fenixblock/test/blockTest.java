@@ -5,7 +5,7 @@ import com.example.fenixblock.FenixBlockApplication;
 import com.example.fenixblock.service.BlockService;
 import com.example.fenixblock.service.BlockTestService;
 import com.example.fenixblock.vo.TestVO;
-import com.example.fenixblock.vo.TransactionVO;
+import entity.TransactionVO;
 import lombok.extern.slf4j.Slf4j;
 import org.junit.Test;
 import org.junit.runner.RunWith;

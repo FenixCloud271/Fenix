@@ -1,6 +1,7 @@
-package com.example.fenixblock.vo;
+package entity;
 
 import com.baomidou.mybatisplus.annotation.TableField;
+import com.baomidou.mybatisplus.annotation.TableLogic;
 import com.baomidou.mybatisplus.annotation.TableName;
 import lombok.Data;
 
@@ -23,6 +24,7 @@ public class CategoryVO {
     Integer level;
 
     @TableField(value = "show_status")
+    @TableLogic(value = "1", delval = "0")
     Integer status;
 
     @TableField(exist = false)

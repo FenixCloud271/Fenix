@@ -18,7 +18,15 @@ spring:
     host: 192.168.0.113
     port: 5672
     virtual-host: /
+
+#mybatis-plus:
+#  config-location: classpath:/mapper/**/*.xml
+#  global-config:
+#    db-config:
+#      id-type: auto
+#      logic-delete-value: 1
+#      logic-not-delete-value: 0
+
 server:
   port: 8083
-
 

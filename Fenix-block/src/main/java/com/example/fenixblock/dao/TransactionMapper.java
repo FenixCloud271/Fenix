@@ -1,6 +1,6 @@
 package com.example.fenixblock.dao;
 
-import com.example.fenixblock.vo.TransactionVO;
+import entity.TransactionVO;
 import org.apache.ibatis.annotations.Mapper;
 import org.apache.ibatis.annotations.Param;
 

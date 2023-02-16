@@ -2,7 +2,7 @@
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 <mapper namespace="com.example.fenixblock.dao.TransactionMapper">
 
-    <select id="getTxHash" parameterType="java.util.List" resultType="com.example.fenixblock.vo.TransactionVO">
+    <select id="getTxHash" parameterType="java.util.List" resultType="entity.TransactionVO">
         select *
         from table_block_transaction_testnet
         where from_address in

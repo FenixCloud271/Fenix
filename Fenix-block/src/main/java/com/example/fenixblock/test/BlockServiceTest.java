@@ -3,7 +3,7 @@ package com.example.fenixblock.test;
 import com.alibaba.fastjson.JSON;
 import com.example.fenixblock.FenixBlockApplication;
 import com.example.fenixblock.service.BlockService;
-import com.example.fenixblock.vo.TransactionVO;
+import entity.TransactionVO;
 import lombok.extern.slf4j.Slf4j;
 import org.junit.Test;
 import org.junit.runner.RunWith;

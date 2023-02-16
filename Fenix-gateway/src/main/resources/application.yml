@@ -1,2 +1,26 @@
+cloud:
+  nacos:
+    discovery:
+      server-addr: 127.0.0.1:8848
+application:
+  name: Fenix-gateway
+
 server:
-  port: 8084
+  port: 8083
+
+spring:
+  cloud:
+    nacos:
+      discovery:
+        server-addr: 127.0.0.1:8848
+    application:
+      name: Fenix-gateway
+
+    gateway:
+      routes:
+        - id: block_route
+          uri: lb://fenix-product
+          predicates:
+            - Path=/api/block/**
+          filters:
+            - RewritePath=/api/(?<segment>/?.*),/$\{segment}
